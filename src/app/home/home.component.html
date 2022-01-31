@@ -1,0 +1,13 @@
+
+   <mat-grid-list  [dataSource]="dataSource" cols="5" rowHeight="2:1">
+    <mat-grid-tile *ngFor="let element of dataSource" (click)="getRecord(element.Country)" class="grille">
+      <mat-card class="my-card">
+        <mat-card-title class="card-title"><h2>{{element.Country}}</h2></mat-card-title>
+        <mat-card-content>
+         <p> <strong>Total Casos Confirmados :</strong>{{element.TotalConfirmed | transform}}<br>
+         <strong>Total de muertes :</strong>{{element.TotalDeaths | transform}}<br>
+         <strong>Total de Recuperaciones :</strong>{{element.TotalRecovered | transform}}</p>
+        </mat-card-content>
+      </mat-card>       
+    </mat-grid-tile>
+  </mat-grid-list>

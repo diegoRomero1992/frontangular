@@ -1,0 +1,10 @@
+.grille:hover{
+    background-color: #bfbfca;
+    border-radius: 10px;
+}
+.grille{
+    cursor: pointer;
+}
+.card-title{
+    text-align: center;
+}
